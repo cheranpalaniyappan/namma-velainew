@@ -3,8 +3,8 @@ const sb = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.pub
 const $ = (s) => document.querySelector(s);
 let jobs = [];
 
-const WA_NUMBER = ""; // Add Namma Velai WhatsApp number later, e.g. 919876543210
-const CHANNEL_URL = ""; // Add your WhatsApp Channel URL later
+const WA_NUMBER = "919629807996"; // Add Namma Velai WhatsApp number later, e.g. 919876543210
+const CHANNEL_URL = "https://whatsapp.com/channel/0029VbDZKEI8qIztjIeeVO22"; // Add your WhatsApp Channel URL later
 
 function setLinks() {
   if (CHANNEL_URL) ["#channel"].forEach(id => { const el=$(id); if(el) el.href=CHANNEL_URL; });
