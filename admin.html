@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Namma Velai Admin</title><link rel="stylesheet" href="admin.css"></head><body>
+<div id="login" class="center"><form id="loginForm" class="card login"><h1>🌿 NAMMA VELAI</h1><p>Admin Panel</p>
+<input id="email" type="email" placeholder="Admin email" required><input id="password" type="password" placeholder="Password" required>
+<button>Login</button><div id="loginMsg"></div></form></div>
+<div id="panel" hidden><header><h2>NAMMA VELAI — Admin</h2><button id="logout">Logout</button></header>
+<main><div class="stats"><div>Total Jobs <b id="total">0</b></div><div>Active <b id="active">0</b></div></div>
+<section class="card"><h2 id="formTitle">Add New Job</h2><form id="jobForm"><input id="rowId" type="hidden">
+<div class="grid">
+<input id="job_id" placeholder="Job ID e.g. NV-013" required><input id="title" placeholder="Job Title" required>
+<input id="organization" placeholder="Organization" required><select id="category"><option>Government</option><option>Private</option><option>10th</option><option>12th</option><option>ITI</option><option>Diploma</option><option>Degree</option><option>Freshers</option></select>
+<input id="qualification" placeholder="Qualification" required><input id="age" placeholder="Age">
+<input id="salary" placeholder="Salary"><input id="location" placeholder="Location">
+<input id="last_date" type="date"><input id="application_fee" placeholder="Application Fee">
+<input id="selection_process" placeholder="Selection Process"><input id="official_link" type="url" placeholder="Official Apply Link">
+</div><textarea id="description" placeholder="Description"></textarea>
+<button type="submit">Publish Job</button><button type="button" id="clear">Clear</button><span id="saveMsg"></span></form></section>
+<section class="card"><h2>All Jobs</h2><table><thead><tr><th>ID</th><th>Title</th><th>Organization</th><th>Status</th><th>Action</th></tr></thead><tbody id="rows"></tbody></table></section></main></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="admin.js"></script></body></html>
