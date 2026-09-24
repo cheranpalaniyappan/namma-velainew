@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>நம்ம வேலை | தமிழ்நாடு வேலைவாய்ப்பு தகவல்கள்</title>
+  <meta name="description" content="தமிழ்நாடு அரசு மற்றும் பிற வேலைவாய்ப்பு அறிவிப்புகள் எளிய தமிழில்.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">ந</div>
+      <div>
+        <div class="brand-name">நம்ம வேலை</div>
+        <div class="brand-sub">வேலைவாய்ப்பு தகவல்கள்</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#new">புதிய வேலைகள்</a>
+      <a href="#month">இந்த மாதம்</a>
+      <a href="#govt">அரசு வேலைகள்</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">தமிழ்நாடு வேலைவாய்ப்பு அறிவிப்புகள்</p>
+        <h1>புதிய வேலைவாய்ப்புகளை<br><span>எளிய தமிழில்</span> பாருங்கள்</h1>
+        <p class="hero-note">வேலை அறிவிப்பு → முழு விவரம் → அதிகாரப்பூர்வ விண்ணப்ப இணைப்பு</p>
+      </div>
+    </section>
+
+    <section class="tools">
+      <input id="search" type="search" placeholder="வேலை / துறை / மாவட்டம் தேடுங்கள்">
+      <select id="category">
+        <option value="">அனைத்து வேலைகள்</option>
+        <option value="Government">அரசு வேலை</option>
+        <option value="Private">தனியார் வேலை</option>
+        <option value="Apprenticeship">பயிற்சி / Apprenticeship</option>
+        <option value="Internship">Internship</option>
+      </select>
+    </section>
+
+    <section id="new" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">LATEST</p>
+          <h2>🆕 புதிய வேலைவாய்ப்பு அறிவிப்புகள்</h2>
+        </div>
+        <span id="newCount" class="count"></span>
+      </div>
+      <div id="newJobs" class="poster-grid"></div>
+    </section>
+
+    <section id="month" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">THIS MONTH</p>
+          <h2>📅 இந்த மாத வேலைவாய்ப்புகள்</h2>
+        </div>
+        <span id="monthCount" class="count"></span>
+      </div>
+      <div id="monthJobs" class="poster-grid"></div>
+    </section>
+
+    <section id="govt" class="section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">GOVERNMENT</p>
+          <h2>🏛️ அரசு வேலைவாய்ப்புகள்</h2>
+        </div>
+      </div>
+      <div id="govtJobs" class="poster-grid"></div>
+    </section>
+
+    <div id="empty" class="empty hidden">
+      <div class="empty-icon">🔎</div>
+      <h3>வேலைவாய்ப்பு கிடைக்கவில்லை</h3>
+      <p>வேறு சொல் அல்லது வகையைத் தேர்வு செய்து முயற்சி செய்யுங்கள்.</p>
+    </div>
+  </main>
+
+  <footer>
+    <strong>நம்ம வேலை</strong> · வேலைவாய்ப்பு தகவல்கள்
+    <span>அதிகாரப்பூர்வ அறிவிப்பை பார்த்து தகுதியை உறுதி செய்து விண்ணப்பிக்கவும்.</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
